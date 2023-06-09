@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangulos</title>
+    <script src="CalcTriangulos.js"></script>
+    <link rel="stylesheet" href="CTestilos.css">
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <h2>Calculadora De Triangulos</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><input type="number" name="L1" id="lado1" placeholder="Lado 1" onblur="captura1()"></p>
+                    <p><input type="number" name="L2" id="lado2" placeholder="Lado 2" onblur="captura2()"></p>
+                    <p><input type="number" name="L3" id="lado3" placeholder="Lado 3" onblur="captura3()"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Area" onclick="area()">
+                    <input type="button" value="Perimetro" onclick="perimetro()">
+                    <input type="button" value="Tipo de triángulo" onclick="tipotriangulo()">
+                    <p><span id="resultado"></span></p>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
